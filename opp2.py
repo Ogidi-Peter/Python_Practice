@@ -9,3 +9,6 @@ class Person:
 
 person1 = Person("Alice",40)
 person1.greet()
+
+person2 = Person("Bob",50)
+person2.greet()
