@@ -17,15 +17,11 @@ class Owner:
 
 
 ######### Main Code #########
-owner1 = Owner('Johnson','5,jj street','9045384538')
-dog1 = Dog("Savata","Eskimo",owner1)
-dog1.bark()
-print(dog1.name)
-print(dog1.breed)
 
-owner1 = Owner('Danny','4,red street','9045584558')
-dog2 = Dog("Lala","German Shephard")
-dog2.bark()
-print(dog2.name)
-print(dog2.breed)
+owner1 = Owner("Johnson","5 jj street","9045384538")
+dog1 = Dog("dan","Eskimo",owner1)
+print(dog1.owner.name)
 
+owner2 = Owner("Danny","4,red street","9045584558")
+dog2 = Dog("Lala","Greyhound",owner2)
+print(dog2.owner.name)
