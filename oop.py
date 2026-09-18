@@ -8,7 +8,7 @@ class Dog:
         print("Bark")
     
 class Owner:
-    def __inti__(self,name,address,contact_no):
+    def __init__(self,name,address,contact_no):
         self.name = name
         self.address = address
         self.contact_no = contact_no
