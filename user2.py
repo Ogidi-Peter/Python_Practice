@@ -1,3 +1,4 @@
+from datetime import datetime
 class User:
     def __init__(self,username,email,password):
         self.username = username
@@ -5,10 +6,14 @@ class User:
         self.password = password
         
     def get_email(self):
+        print(f"Email accessed at {datetime.now()}")
         return self._email
     
-    def set_email(self):
-        self._email = new_email
+    def set_email(self,new_email):
+        if "@" in new_email:
+            self._email = new_email
+        else:
+            print("Invalid Email Address")
         
 user1 = User("Danny","dan12@gmail.com","123dr")
 
