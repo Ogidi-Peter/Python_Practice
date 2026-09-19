@@ -8,8 +8,12 @@ class User:
     @property
     def email(self):
         print("Email accessed")
-        return self._email  
-
+        return self._email      
+    @email.setter
+    def email(self,new_email):
+        if '@' in new_email:
+            self._email = new_email
+            
 user1 = User("Danny","dan@gmail.com","1212dr")
-
+user1.email = "this is not an email"
 print(user1.email)
