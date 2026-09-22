@@ -7,9 +7,12 @@ class EmailService:
         
     def send_email(self):
         self._connect()
-        self._authenticate
+        self._authenticate()
         print("sending email...")
         self._disconnect()
         
     def _disconnect(self):
         print("Disconnecting from email server...")
+        
+email = EmailService()
+email.send_email()
