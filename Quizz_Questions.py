@@ -1,0 +1,2 @@
+def Quizz():
+    pass
