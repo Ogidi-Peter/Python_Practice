@@ -62,11 +62,11 @@ def Quizz():
     print(f"Percentage: {percentage:.2f}%")
 
     if percentage == 100:
-        print("Excellent! Perfect score! 🎉")
+        print("Excellent! Perfect score! ")
     elif percentage >= 60:
-        print("Good job! 👍")
+        print("Good job! ")
     else:
-        print("Keep practicing! 📚")
+        print("Keep practicing! ")
 
 
 Quizz()
